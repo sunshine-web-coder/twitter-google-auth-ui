@@ -1,0 +1,29 @@
+.Show_More_Feed {
+  transition: opacity 0.3s ease-out 0s;
+  width: 100%;
+  min-height: 48px;
+  transition-duration: 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  span {
+    font-size: 15px;
+    color: #1d9bf0;
+  }
+
+  &:hover {
+    background-color: rgba(240, 240, 240, 0.562);
+  }
+}
+
+// ShowMoreFeed Dark theme styles
+
+.dark_theme{
+  .Show_More_Feed {
+    &:hover {
+      background-color: rgba(24, 24, 24, 0.349);
+    }
+  }
+}

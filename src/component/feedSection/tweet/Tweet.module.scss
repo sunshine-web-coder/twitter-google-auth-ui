@@ -1,0 +1,212 @@
+.top_feed_container {
+  display: flex;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 8px;
+  padding-top: 7px;
+  border-bottom: 1px solid rgb(240, 240, 240);
+
+  @media screen and (max-width: 499px) {
+    display: none;
+  }
+
+  .lAvatar {
+    flex-basis: 48px;
+    margin-right: 12px;
+    margin-top: 5px;
+
+    .avatar {
+      box-shadow: rgba(0, 0, 0, 0.03) 0px 0px 2px inset;
+      width: 48px;
+      height: 48px;
+      border-bottom-left-radius: 9999px;
+      border-bottom-right-radius: 9999px;
+      border-top-left-radius: 9999px;
+      border-top-right-radius: 9999px;
+      overflow: hidden;
+
+      img {
+        max-width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  .rEditorBox {
+    width: 100%;
+    padding-bottom: 2px;
+    padding-top: 10px;
+
+    .s87m88 {
+      display: none;
+
+      &.Shows87m88 {
+        display: block;
+      }
+    }
+
+    .s878879 {
+      margin-bottom: 20px;
+      button {
+        min-width: 20px;
+        height: 22px;
+        border-bottom-left-radius: 9999px;
+        border-bottom-right-radius: 9999px;
+        border-top-left-radius: 9999px;
+        border-top-right-radius: 9999px;
+        font-size: 14px;
+        color: #1d9bf0;
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        border: 1px solid rgb(207, 207, 207);
+        transition: 0.2s;
+        outline: none;
+
+        &:hover {
+          background-color: #1d9cf023;
+        }
+        svg {
+          width: 16px;
+          height: 16px;
+          fill: #1d9bf0;
+          margin-left: 4px;
+        }
+      }
+    }
+
+    .textArea_content {
+      padding-left: 4px;
+      max-width: 370px;
+      .textArea {
+        min-width: 55px;
+        max-height: 320px;
+        border: none;
+        -moz-appearance: textfield-multiline;
+        -webkit-appearance: textarea;
+        resize: both;
+        // box-shadow: inset 0px 1px 2px #ffffff;
+        line-height: 24px;
+        font-size: 20px;
+        color: rgb(15, 20, 25);
+        font-weight: 400;
+        outline: none;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        overflow: hidden;
+        resize: none;
+        white-space: pre-wrap;
+
+        &:empty:before {
+          content: attr(placeholder);
+          color: rgb(15, 20, 25);
+          opacity: 0.8;
+          cursor: text;
+        }
+      }
+    }
+    .s878759 {
+      margin-top: 20px;
+      button {
+        min-width: 20px;
+        height: 22px;
+        border-bottom-left-radius: 9999px;
+        border-bottom-right-radius: 9999px;
+        border-top-left-radius: 9999px;
+        border-top-right-radius: 9999px;
+        font-size: 14px;
+        color: #1d9bf0;
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        border: 1px solid rgb(207, 207, 207);
+        transition: 0.2s;
+        outline: none;
+
+        &:hover {
+          background-color: #1d9cf023;
+        }
+        svg {
+          width: 16px;
+          height: 16px;
+          fill: #1d9bf0;
+          margin-right: 4px;
+        }
+      }
+    }
+    .bottom {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+
+      .left {
+        display: flex;
+        div {
+          min-width: 36px;
+          min-height: 36px;
+          border-radius: 100%;
+          background-color: #ffffff;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .r_feed_icon {
+            width: 20px;
+            height: 20px;
+            fill: rgb(29, 155, 240);
+          }
+
+          &:hover {
+            background-color: #1d9cf023;
+            border: none;
+            outline: none;
+          }
+        }
+      }
+      .right {
+        button {
+          background-color: rgb(29, 155, 240);
+          transition-duration: 0.2s;
+          border: none;
+          outline: none;
+          min-width: 36px;
+          min-height: 36px;
+          font-size: 15px;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+// Tweet dark mode styles
+
+.dark_theme {
+  .top_feed_container {
+    border-bottom: 1px solid rgba(80, 80, 80, 0.452);
+
+    .rEditorBox {
+      .s878879 {
+        button {
+          border: 1px solid rgb(116, 116, 116);
+        }
+      }
+      .textArea_content {
+        .textArea {
+          color: #ffffff;
+
+          &:empty:before {
+            color: #5a5a5a;
+          }
+        }
+      }
+      .s878759 {
+        button {
+          border: 1px solid rgb(116, 116, 116);
+        }
+      }
+    }
+  }
+}

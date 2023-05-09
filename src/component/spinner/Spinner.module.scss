@@ -1,0 +1,26 @@
+.spinner_container {
+  min-height: 70px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7f9f9;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.spinner_container2 {
+  min-height: 200px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7f9f9;
+}
+
+.dark_theme {
+  .spinner_container,
+  .spinner_container2 {
+    background-color: #16181C;
+  }
+}

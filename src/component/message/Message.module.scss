@@ -1,0 +1,115 @@
+.message {
+  position: fixed;
+  right: 0px;
+  bottom: 0;
+  z-index: 1000;
+  min-width: 390px;
+  background-color: #ffffff;
+  // padding: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
+  // overflow: hidden;
+  box-shadow: rgba(101, 119, 134, 0.2) 0px 0px 15px,
+    rgba(101, 119, 134, 0.15) 0px 0px 3px 1px;
+
+  .message_title {
+    height: 53px;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    // align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+
+    .left {
+      display: flex;
+      align-items: center;
+      flex-shrink: 1;
+      width: 100%;
+      span {
+        font-size: 20px;
+        color: #0f1419;
+        font-weight: 700;
+      }
+    }
+    .right {
+      min-width: 56px;
+      min-height: 32px;
+      display: flex;
+      align-items: center;
+      margin-right: 20px;
+
+      .exPjjY6 {
+        position: relative;
+      
+        span {
+          position: absolute;
+          text-align: center;
+          top: -23px;
+          right: -12px;
+          background-color: #0f14198f;
+          color: #ffffff;
+          font-size: 12px;
+          padding: 3px;
+          padding-left: 7px;
+          padding-right: 7px;
+          border-radius: 3px;
+          display: none;
+          width: max-content;
+
+          &.exPjjY6m7{
+            right: -23px;
+          }
+        }
+        &:hover > span {
+          display: block;
+        }
+      }
+    }
+  }
+  .message_box_container {
+    height: 0px;
+    transition: height 0.3s ease;
+  }
+  .show_message_box_container {
+    height: 470px;
+  }
+  @media screen and (max-width: 1077px) {
+    display: none;
+  }
+}
+
+
+.dark_theme{
+  .message{
+    background-color: #000000;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 15px,
+    rgba(255, 255, 255, 0.15) 0px 0px 3px 1px;
+
+    .message_title {
+      .left {
+        span {
+          color: #e7e9ea;
+        }
+      }
+      .right {  
+        .exPjjY6 {        
+          .messageBox{
+            .inner_messageBox{
+              .inner_messageBoxSvg{
+                &:hover{
+                  background-color: #141414;
+                }
+                svg{
+                  fill: #e7e9ea;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

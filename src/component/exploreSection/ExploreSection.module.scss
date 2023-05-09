@@ -1,0 +1,45 @@
+.light_theme {
+  border-right: 1px solid rgb(240, 240, 240);
+  width: 1220px;
+  padding-left: 270px;
+  background-color: transparent;
+
+  @media screen and (max-width: 1264px) {
+    padding-left: 88px;
+  }
+  @media screen and (max-width: 619px) {
+    padding-left: 58px;
+  }
+  @media screen and (max-width: 499px) {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .feed_section {
+    .inner_feed_section {
+      width: 100%;
+      position: relative;
+    }
+  }
+}
+
+.dark_theme {
+  border-right: 1px solid rgba(80, 80, 80, 0.452);
+  width: 1220px;
+  padding-left: 270px;
+  background-color: transparent;
+
+  @media screen and (max-width: 1281px) {
+    padding-left: 90px;
+  }
+  @media screen and (max-width: 619px) {
+    padding-left: 58px;
+  }
+  @media screen and (max-width: 1004px) {
+    max-width: 600px;
+  }
+  @media screen and (max-width: 499px) {
+    max-width: 100%;
+    padding: 0;
+  }
+}

@@ -1,0 +1,33 @@
+.footer {
+  margin-top: 16px;
+  .inner_footer {
+    div {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 5px;
+      a, li {
+        font-size: 13px;
+        color: #536471;
+        max-width: max-content;
+        margin: 0;
+        padding: 0;
+        font-weight: 400;
+        line-height: 16px;
+        list-style-type: none;
+        cursor: pointer;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    p {
+      font-size: 13px;
+      color: #536471;
+      max-width: max-content;
+      margin: 0;
+      padding: 0;
+      font-weight: 400;
+      line-height: 16px;
+    }
+  }
+}

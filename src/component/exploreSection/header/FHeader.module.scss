@@ -1,0 +1,211 @@
+.light_theme {
+  width: 100%;
+  position: sticky;
+  top: -0.5px;
+  z-index: 3;
+
+  @media screen and (max-width: 499px) {
+    min-height: 0px;
+  }
+}
+.FHeader {
+  background-color: transparent;
+  backdrop-filter: blur(12px);
+  // border-bottom: 1px solid rgb(240, 240, 240);
+
+  @media screen and (max-width: 499px) {
+    min-height: 0px;
+  }
+
+  .fHtop {
+    height: 53px;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width: 499px) {
+      gap: 30px;
+    }
+
+    .logo {
+      display: none;
+
+      a {
+        svg {
+          width: 35px;
+          height: 35rem;
+          fill: #1d9bf0;
+        }
+      }
+      @media screen and (max-width: 499px) {
+        display: block;
+      }
+    }
+    .searchBar {
+      display: none;
+
+      @media screen and (max-width: 499px) {
+        display: block;
+        flex-shrink: 1;
+        width: 100%;
+        background-color: rgb(196, 196, 196);
+        display: flex;
+        align-items: center;
+        border-radius: 9999px;
+        overflow: hidden;
+        padding-left: 16px;
+        padding-right: 16px;
+
+        svg {
+          max-width: 100%;
+          height: 1.25em;
+          fill: rgb(113, 118, 123);
+        }
+
+        form {
+          // border: 1px solid red;
+          width: 100%;
+        }
+        input {
+          width: 100%;
+          padding: 12px;
+          background-color: transparent;
+          border: none;
+          outline: none;
+          color: #636363;
+          line-height: 19px;
+          font-size: 14px;
+        }
+      }
+    }
+    span {
+      font-size: 20px;
+      color: #0f1419;
+      @media screen and (max-width: 499px) {
+        display: none;
+      }
+    }
+    .settingsSvg {
+      svg {
+        fill: #0f1419;
+        width: 20px;
+        height: 20px;
+
+        &:nth-child(2) {
+          display: none;
+        }
+
+        @media screen and (max-width: 499px) {
+          &:nth-child(1) {
+            display: none;
+          }
+          &:nth-child(2) {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  .fHbottom {
+    display: flex;
+
+    button {
+      width: 100%;
+      height: 53px;
+      font-size: 15px;
+      color: #0f1419;
+      background-color: transparent;
+      border-radius: 0px;
+      padding: 0;
+      margin: 0;
+      padding-left: 16px;
+      padding-right: 16px;
+      border: none;
+      outline: none;
+
+      &:hover {
+        background-color: rgba(128, 128, 128, 0.123);
+        transition: 0.2s;
+      }
+    }
+    .active {
+      position: relative;
+      font-weight: bold;
+
+      &:after {
+        position: absolute;
+        content: "";
+        height: 5px;
+        bottom: -0px;
+        margin: 0 auto;
+        border-radius: 10px;
+        left: 0;
+        right: 0;
+        width: 23%;
+        background: rgb(29, 155, 240);
+        -o-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+      }
+    }
+  }
+}
+
+// FHeader dark mode and light mode styles
+
+.dark_theme {
+  width: 100%;
+  position: sticky;
+  top: -0.5px;
+  z-index: 3;
+
+  @media screen and (max-width: 499px) {
+    min-height: 0px;
+  }
+
+  .FHeader {
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+
+    @media screen and (max-width: 499px) {
+      min-height: 0px;
+    }
+
+    .fHtop {
+      .logo {
+        a {
+          svg {
+            fill: #ffffff;
+          }
+        }
+      }
+      span {
+        font-size: 20px;
+        color: #ffffff;
+      }
+      .settingsSvg {
+        svg {
+          fill: #ffffff;
+          cursor: pointer;
+        }
+      }
+    }
+    .fHbottom {
+      display: flex;
+
+      button {
+        color: #ffffff;
+        background-color: transparent;
+
+        &:hover {
+          background-color: rgba(128, 128, 128, 0.123);
+          transition: 0.2s;
+        }
+      }
+    }
+  }
+}
